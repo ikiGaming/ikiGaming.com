@@ -1,0 +1,146 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}
+
+p{
+    font-family:"AllerRegular";
+    font-size:17px;
+    color:#f2f2f2;
+    margin-top:-23px;
+    text-shadow:0 1px 0 #222;
+    padding-left:18px;
+}
+
+h2
+{
+    font-family:"NunitoRegular";
+    font-size:47px;
+    color:#fafafa;
+    text-shadow:0 1px 0 #222;
+    padding-left:18px;
+
+}
+
+.ikiLogo {
+    position:relative;
+    left:40px;
+    top:220px;
+}
+
+#header, #intro, #second, #cavetown{
+    position:relative;  
+	width:85%;
+    left:15%;
+}
+
+#cavetown {
+    background:url(images/cavetown.jpg) no-repeat fixed;
+    height: 1000px;
+    position:relative;
+    margin: auto;
+}
+
+
+#cavetown-logo{
+	background:url(images/LogoCaveTown.png) no-repeat fixed;
+    width:100%;
+    position:absolute;
+    z-index:200;
+    height:1000px;
+    left:-50px;
+}
+
+#intro{
+	background:url(images/firstBG.jpg) 50% -75px no-repeat fixed;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#second{
+	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#second .bg{
+	background: url(images/trainers.png) no-repeat fixed;
+	position:absolute;
+    height: 500px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 200;
+    height:1300px;
+}
+
+
+
+.story{
+	margin: 0 auto;
+	overflow: auto;
+	width: 100%;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+    
+}
+
+
+#bottom{
+    bottom: 0 ;
+    background-color: #222;
+    left: 0;
+    position: fixed;
+    width: 100%;    
+    z-index: 1000;
+    color: white;
+    font-size: 1.2em;
+    padding: 20px 0 15px 10px;
+    overflow: auto;
+}
+
+
+#left{
+position: fixed; 
+top: 0; 
+left: 0; 
+width: 20%; /*Width of left frame div*/
+height: 100%;
+/*overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #fff;
+z-index:1;
+}
+
+.innertube{
+    margin: 30px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+    margin-top: 0;
+}
