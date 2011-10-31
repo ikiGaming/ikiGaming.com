@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ikiGaming</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	RepositionNav();
+	
+	$(window).resize(function(){
+		RepositionNav();
+	});	
+	
+	//.parallax(xPosition, adjuster, inertia, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//adjuster - y position to start from
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#cavetown').parallax(0, 0, 0.8, false);
+	$('#cavetown-logo').parallax(200, 200, 0.4, true);
+    $('#intro').parallax(0, 0, 0.1, true);
+   	$('#second').parallax(0, 0, 0.1, true);
+	$('.bg').parallax(0, 2500, 0.4, true);
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+    <div id="left">
+        <div class="ikiLogo">
+            <img src="images/logo.png">
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div class="innertube">
+        </div>
+    </div>	
+
+
+    <div id="cavetown">
+       
+       <div id="cavetown-logo"></div> 
+        <div class="story">
+            <h2>CaveTown</h2>
+            <p>Go back to the prehistoric era!</p>
+        </div>
+    </div>
+
+	<div id="intro" >
+		<div class="story">
+	    	<div class="float-left">
+			<h2>(Almost) Static Background</h2>
+	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> 
+	
+	<div id="second">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	            <h2>Multiple Backgrounds</h2>
+	            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+	        </div>
+	    </div> <!--.story-->
+	    
+	</div> <!--#second-->
+	
+</body>
+</html>
