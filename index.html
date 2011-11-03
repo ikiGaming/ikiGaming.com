@@ -24,21 +24,20 @@ $(document).ready(function(){
 	//adjuster - y position to start from
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	//$('#cavetown-bg').parallax(0, 0, 0.1, true);
 	$('#cavetown-mg').parallax(0, 600, 0.3, true);
 	$('#cavetown-fg').parallax(0, 0, 1, true);
 
-  	//$('#qpark-bg').parallax(0, 800, 0.1, true);
 	$('#qpark-mg').parallax(0, 1500, 0.3, true);
-	$('#qpark-fg').parallax(0, 1500, 1, true);
+	$('#qpark-fg').parallax(0, 1750, 1, true);
  
-   	//$('#vidatec-bg').parallax(0, 000, 0.1, true);
-	$('#vidatec-mg').parallax(0, 3000, 0.3, true);
-	$('#vidatec-fg').parallax(0, 3000, 1, true);
+	$('#lovestory-mg').parallax(0, 3000, 0.3, true);
+	$('#lovestory-fg').parallax(0, 3000, 1, true);
  
-  	//$('#crash-bg').parallax(0, 00, 0.1, true);
-	$('#crash-mg').parallax(0, 4500, 0.3, true);
-	$('#crash-fg').parallax(0, 4500, 1, true);
+    $('#vidatec-mg').parallax(0, 4500, 0.3, true);
+	$('#vidatec-fg').parallax(0, 4500, 1, true);
+ 
+	$('#crash-mg').parallax(0, 6000, 0.3, true);
+	$('#crash-fg').parallax(0, 6000, 1, true);
 
     //fix it once everything is ready
      
@@ -68,14 +67,19 @@ $(document).ready(function(){
       <img src="images/LogoCaveTown.png" class="logo"/>
       <div class="description">
 			<div class="arrow"></div>
-            <h2>Jump back to the prehistoric Era!</h2>
+            <h2 class="cavetown-color">Jump back to the prehistoric Era!</h2>
             <p>Travel in time and and grow your own cavemen's town!</p>
             <ul>
-                <li>Find cute ancient mammals, harvest exotic crops and fruit trees!</li>
-                <li>Tame an exciting world full of carnivorous plants and wild dinosaurs!</li>
-                <li>Decorate your lands with tamed dinosaurs and exotic animals!</li>
+                <li class="cavetown-list">>Find cute ancient mammals, harvest exotic crops and fruit trees!</li>
+                <li class="cavetown-list">>Tame an exciting world full of carnivorous plants and wild dinosaurs!</li>
+                <li class="cavetown-list">>Decorate your lands with tamed dinosaurs and exotic animals!</li>
             </ul>
-            <p>Available on: <strong>Facebook | Orkut | Odnoklassniki</strong></p>
+            <p>Play it now!</p>
+                <p> 
+                    <a href="dadada" class="playButton cavetown-button">Play on Facebook</a> 
+                    <a href="dadada" class="playButton">Play on Odnoklassniki</a> 
+                    <a href="dadada" class="playButton">Play on Orkut</a> 
+                </p>
             <p>Coming soon to: <strong>iOS</strong></p>
         </div>
     </div>
@@ -84,25 +88,50 @@ $(document).ready(function(){
        <div id="qpark-bg" class="parallaxElement"></div>
        <div id="qpark-mg" class="parallaxElement"></div> 
        <div id="qpark-fg" class="parallaxElement"></div> 
-       <img src="images/qparkLogo.png" class="logo"/>
+       <img src="images/QparkLogo.png" class="logo"/>
         <div class="description">
 			<div class="arrow"></div>
-            <h2 style="color:rgb(176,214,237);">Bring happiness to the Q-Bees!</h2>
-            <p>Go back to the prehistoric era!</p>
+            <h2 class="qpark-color">Bring happiness to the Q-Bees!</h2>
+            <p>Build an alien amusement park and help this wonderful creatures to discover their true selves!</p>
+            <ul>
+                <li class="qpark-list">Unblock and grow crazy attractions to bring more Q-bees in!</li>
+                <li class="qpark-list">Discover the hidden Q-Bees! They have surprises for you! </li>
+                <li class="qpark-list">Play with your friends in a true SOCIAL way, forget about spam!</li> 
+            </ul>
             <p>Coming soon to:</p>
             <p><b>iOS | android | facebook</b></p>
         </div>
     </div>
 
-     <div id="vidatec">
+    <div id="lovestory">
+        <div id="lovestory-bg" class="parallaxElement"></div>
+        <div id="lovestory-mg" class="parallaxElement"></div> 
+        <div id="lovestory-fg" class="parallaxElement"></div> 
+        <img src="images/VidaTecLogo.png" class="logo"/>
+        <div class="description">
+            <div class="arrow"></div>
+            <h2 class="lovestory-color">Find your own love story</h2>
+            <p>Have you ever met someone whom you've fallen in love with almost instantly? Alan did too! Help him win over the love of his life, Kathy, while struggling with all the problems high school present.</p>
+            <ul>
+            <li class="lovestory-list">Get help from all your good friends! Fight against the douchebags!</li>
+            <li class="lovestory-list">See how your decisions affect your long term plan to get the girl.</li>
+            <li class="lovestory-list">Be careful with your ex-girlfriend, she might bring trouble! </li>
+        </div>
+    </div>
+
+    <div id="vidatec">
        <div id="vidatec-bg" class="parallaxElement"></div>
        <div id="vidatec-mg" class="parallaxElement"></div> 
        <div id="vidatec-fg" class="parallaxElement"></div> 
-       <img src="images/LogoCaveTown.png" class="logo"/>
+       <img src="images/VidaTecLogo.png" class="logo"/>
         <div class="description">
 			<div class="arrow"></div>
-            <h2>VidaTec</h2>
-            <p>Go back to the prehistoric era!</p>
+            <h2 class="vidatec-color">Try out your new college life!</h2>
+            <p>Get to know one of Mexico's top universities and learn about all the amenities it offers!</p>
+            <ul>
+                <li class="vidatec-list">Explore all the different campi within the metropolitan area.</li>
+                <li class="vidatec-list">Test your abilities and knowledge against your friends.</li>
+                <li class="vidatec-list">Decorate your avatar and apartment to match your likes. </li>
         </div>
     </div>
 

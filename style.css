@@ -58,6 +58,7 @@ h2
 	-webkit-box-shadow:  0 0 15px #000;
 	-moz-box-shadow:  0 0 15px #000;
 }
+
 	.arrow {
 		width:50px;
 		height: 50px;
@@ -69,23 +70,83 @@ h2
 	
 	.description h2{
 		font-size: 34px;
-		color: #33cc33;
 		text-align: center;
-		text-transform: uppercase;
-		
+		text-transform: uppercase;	
 	}
+
 	.description p {
 		text-align: center;
 	}
+
+.playButton {
+    -webkit-appearance: none;
+    -webkit-background-origin: padding-box;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.0976562) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.179688) 0px 1px 0px 0px, rgb(162, 223, 254) 0px 1px 0px 0px inset;
+    -webkit-font-smoothing: antialiased;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(top, rgb(119, 194, 253), rgb(94, 174, 245) 50%, rgb(87, 168, 241) 51%, rgb(66, 150, 231));
+    background-origin: padding-box;
+    border-bottom-color: #347FC6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #347FC6;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #347FC6;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #347FC6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(255, 255, 255, 0.0976562) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.179688) 0px 1px 0px 0px, rgb(162, 223, 254) 0px 1px 0px 0px inset;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 0px;
+    line-height: 34px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 0px;
+    outline-color: white;
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    position: static;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    text-shadow: rgba(15, 89, 153, 0.496094) 0px -1px 0px;
+    vertical-align: baseline;
+    width: 0px;
+
+}
+
+
 	
 	.description ul li {
 		list-style-type: none;
-		width: 150px;
+		height: 100px;
+        width: 150px;
 		float: left;
 		padding: 10px;
 		margin: 15px 5px;
 		font-size: 16px;
-		border-bottom: 1px solid #33cc33;
 	}
 
 ul {
@@ -134,17 +195,32 @@ li {
     display:block;
 }
 
-#cavetown, #qpark, #vidatec, #crash {
+#lovestory, #cavetown, #qpark, #vidatec, #crash {
     position:relative;  
     height:1500px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     border-bottom: 1px solid #444;
 }
 
+.qpark-color { color:rgb(176,214,237); }
+.cavetown-color { color: #3c3; }
+.vidatec-color { color:rgb(55,117,201); }
+.lovestory-color { color:#c33;}
+.crash-color { }
+
+
+.cavetown-list  { border-bottom: 1px solid #33cc33; }
+.qpark-list     { border-bottom: 1px solid rgb(176,214,237);}
+.vidatec-list   { border-bottom: 1px solid rgb(55,117,201); }
+.lovestory-list { border-bottom: 1px solid #c33;}
+.crash-list     { border-bottom: 1px solid rgb(176,214,237);}
+
+
 #cavetown { z-index:5;}
 #qpark { z-index:4;}
 #vidatec { z-index:3;}
-#crash { z-index:2;}
+#lovestory {z-index:2;}
+#crash { z-index:1;}
 
 
 
@@ -156,9 +232,13 @@ li {
 #qpark-mg{ background:url(images/Qpark2.png) no-repeat; }
 #qpark-fg { background:url(images/Qpark1.png) no-repeat; }
 
-#vidatec-bg { background:url(images/CaveTown3.jpg) no-repeat fixed; }
-#vidatec-mg { background:url(images/CaveTown2.png) no-repeat fixed; }
-#vidatec-fg { background:url(images/CaveTown1.png) no-repeat fixed; }
+#vidatec-bg { background:url(images/VidaTec3.jpg) no-repeat fixed; }
+#vidatec-mg { background:url(images/VidaTec2.png) no-repeat fixed; }
+#vidatec-fg { background:url(images/VidaTec1.png) no-repeat fixed; }
+
+#lovestory-bg { background:url(images/LoveStory3.jpg) no-repeat; }
+#lovestory-mg{ background:url(images/Qprk2.png) no-repeat; }
+#lovestory-fg { background:url(images/LoveStory1.png) no-repeat; }
 
 #crash-bg { background:url(images/Qpark3.png) no-repeat; }
 #crash-mg{ background:url(images/Qpark2.png) no-repeat; }
