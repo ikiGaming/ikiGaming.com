@@ -47,15 +47,46 @@ h2
 
 
 .description {
-    background-color: rgba(0,0,0,0.75);
-    padding: 40px;
-    border: 1px solid #000;
-    width:600px;
+	width:600px;
+	padding: 40px;
+	background:  url('images/backDescription.png') repeat-y;
+	border-radius: 30px;
     top:100px;
     position:absolute;
     left: 400px; 
-    
+	box-shadow:  0 0 15px #000;
+	-webkit-box-shadow:  0 0 15px #000;
+	-moz-box-shadow:  0 0 15px #000;
 }
+	.arrow {
+		width:50px;
+		height: 50px;
+		background: url('images/balloonArrow.png') no-repeat;
+		position: absolute;
+		top: 50px;
+		left: -50px;
+	}
+	
+	.description h2{
+		font-size: 34px;
+		color: #33cc33;
+		text-align: center;
+		text-transform: uppercase;
+		
+	}
+	.description p {
+		text-align: center;
+	}
+	
+	.description ul li {
+		list-style-type: none;
+		width: 150px;
+		float: left;
+		padding: 10px;
+		margin: 15px 5px;
+		font-size: 16px;
+		border-bottom: 1px solid #33cc33;
+	}
 
 ul {
     list-style-type: circle;
