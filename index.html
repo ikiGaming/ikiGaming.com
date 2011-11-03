@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ikiGaming</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Metrophobic' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#nav').localScroll(800);
@@ -24,11 +24,25 @@ $(document).ready(function(){
 	//adjuster - y position to start from
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#cavetown').parallax(0, 0, 0.8, false);
-	$('#cavetown-logo').parallax(200, 200, 0.4, true);
-    $('#intro').parallax(0, 0, 0.1, true);
-   	$('#second').parallax(0, 0, 0.1, true);
-	$('.bg').parallax(0, 2500, 0.4, true);
+	//$('#cavetown-bg').parallax(0, 0, 0.1, true);
+	$('#cavetown-mg').parallax(0, 600, 0.3, true);
+	$('#cavetown-fg').parallax(0, 0, 1, true);
+
+  	//$('#qpark-bg').parallax(0, 800, 0.1, true);
+	$('#qpark-mg').parallax(0, 1500, 0.3, true);
+	$('#qpark-fg').parallax(0, 1500, 1, true);
+ 
+   	//$('#vidatec-bg').parallax(0, 000, 0.1, true);
+	$('#vidatec-mg').parallax(0, 3000, 0.3, true);
+	$('#vidatec-fg').parallax(0, 3000, 1, true);
+ 
+  	//$('#crash-bg').parallax(0, 00, 0.1, true);
+	$('#crash-mg').parallax(0, 4500, 0.3, true);
+	$('#crash-fg').parallax(0, 4500, 1, true);
+
+    //fix it once everything is ready
+     
+   
 })
 </script>
 </head>
@@ -40,46 +54,69 @@ $(document).ready(function(){
 	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	</ul>
-    <div id="left">
-        <div class="ikiLogo">
-            <img src="images/logo.png">
-        </div>
-    </div>
 
-    <div id="bottom">
-        <div class="innertube">
-        </div>
+    
+    <div id="top">
+    <img src="images/ikiGamingLogoWhite.png" id="ikiLogo"/>
     </div>	
 
 
-    <div id="cavetown">
-       
-       <div id="cavetown-logo"></div> 
-        <div class="story">
-            <h2>CaveTown</h2>
+    <div id="cavetown"> 
+      <div id="cavetown-bg" class="parallaxElement"></div>
+      <div id="cavetown-mg" class="parallaxElement"></div> 
+      <div id="cavetown-fg" class="parallaxElement"></div> 
+      <img src="images/LogoCaveTown.png" class="logo"/>
+      <div class="description">
+            <h2>Go back to the prehistoric Era!</h2>
+            <p>Travel in time and and grow your own cavemen's town!</p>
+            <ul>
+                <li>Find cute ancient mammals, harvest exotic crops and fruit trees!</li>
+                <li>Tame an exciting world full of carnivorous plants and wild dinosaurs!</li>
+                <li>Decorate your lands with tamed dinosaurs and exotic animals!</li>
+            </ul>
+            <p>Available on:</p>
+            <p><b>Facebook | Orkut | Odnoklassniki</b></p>
+            <p>Coming soon to:</p>
+            <p><b>iOS</b></p>
+        </div>
+    </div>
+
+    <div id="qpark">
+       <div id="qpark-bg" class="parallaxElement"></div>
+       <div id="qpark-mg" class="parallaxElement"></div> 
+       <div id="qpark-fg" class="parallaxElement"></div> 
+       <img src="images/LogoCaveTown.png" class="logo"/>
+        <div class="description">
+            <h2>Qpark</h2>
+            <p>Go back to the prehistoric era!</p>
+            <p>Coming soon to:</p>
+            <p><b>iOS | android | facebook</b></p>
+        </div>
+    </div>
+
+     <div id="vidatec">
+       <div id="vidatec-bg" class="parallaxElement"></div>
+       <div id="vidatec-mg" class="parallaxElement"></div> 
+       <div id="vidatec-fg" class="parallaxElement"></div> 
+       <img src="images/LogoCaveTown.png" class="logo"/>
+        <div class="description">
+            <h2>VidaTec</h2>
             <p>Go back to the prehistoric era!</p>
         </div>
     </div>
 
-	<div id="intro" >
-		<div class="story">
-	    	<div class="float-left">
-			<h2>(Almost) Static Background</h2>
-	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
-	        </div>
-	    </div> <!--.story-->
-	</div> 
-	
-	<div id="second">
-		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
-	            <h2>Multiple Backgrounds</h2>
-	            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
-	
+   <div id="crash">
+       <div id="crash-bg" class="parallaxElement"></div>
+       <div id="crash-mg" class="parallaxElement"></div> 
+       <div id="crash-fg" class="parallaxElement"></div> 
+       <img src="images/LogoCaveTown.png" class="logo"/>
+        <div class="description">
+            <h2>Crash pollito</h2>
+            <p>Go back to the prehistoric era!</p>
+        </div>
+    </div>
+
+
+
 </body>
 </html>

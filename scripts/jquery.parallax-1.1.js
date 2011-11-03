@@ -81,5 +81,6 @@ function inView(pos, element){
 			inView(pos, $this);
 			
 		})
+        inView(0,$this);
 	}
 })( jQuery );

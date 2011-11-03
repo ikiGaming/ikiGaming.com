@@ -12,8 +12,10 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 /* CSS Document */
 
 body{
-	margin: 0;
+	font-family:"Metrophobic", sans-serif;
+    margin: 0;
 	padding: 0;
+    font-size:14pt;
 }
 
 #nav{
@@ -27,120 +29,109 @@ body{
 }
 
 p{
-    font-family:"AllerRegular";
-    font-size:17px;
     color:#f2f2f2;
-    margin-top:-23px;
     text-shadow:0 1px 0 #222;
     padding-left:18px;
 }
 
 h2
 {
-    font-family:"NunitoRegular";
-    font-size:47px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.05em;
+    font-weight:700;
+    font-size:2em;
     color:#fafafa;
     text-shadow:0 1px 0 #222;
-    padding-left:18px;
-
-}
-
-.ikiLogo {
-    position:relative;
-    left:40px;
-    top:220px;
-}
-
-#header, #intro, #second, #cavetown{
-    position:relative;  
-	width:85%;
-    left:15%;
-}
-
-#cavetown {
-    background:url(images/cavetown.jpg) no-repeat fixed;
-    height: 1000px;
-    position:relative;
-    margin: auto;
+    margin: 0px;
 }
 
 
-#cavetown-logo{
-	background:url(images/LogoCaveTown.png) no-repeat fixed;
-    width:100%;
+.description {
+    background-color: rgba(0,0,0,0.75);
+    padding: 40px;
+    border: 1px solid #000;
+    width:600px;
+    top:100px;
     position:absolute;
-    z-index:200;
-    height:1000px;
-    left:-50px;
-}
-
-#intro{
-	background:url(images/firstBG.jpg) 50% -75px no-repeat fixed;
-	color: white;
-	height: 600px;
-	margin: 0 auto;
-}
-
-#second{
-	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
-	height: 1300px;
-	margin: 0 auto;
-	padding: 0;
-}
-
-#second .bg{
-	background: url(images/trainers.png) no-repeat fixed;
-	position:absolute;
-    height: 500px;
-	margin: 0 auto;
-	padding: 0;
-	z-index: 200;
-    height:1300px;
-}
-
-
-
-.story{
-	margin: 0 auto;
-	overflow: auto;
-	width: 100%;
-}
-
-.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
-	position: relative;
-	width: 350px;	
+    left: 400px; 
     
 }
 
+ul {
+    list-style-type: circle;
+}
 
-#bottom{
-    bottom: 0 ;
-    background-color: #222;
-    left: 0;
+li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    color:#f2f2f2;
+}
+
+
+#top{
+    top:0px;
+    background-color: rgba(0,0,0,0.9);
     position: fixed;
     width: 100%;    
     z-index: 1000;
     color: white;
     font-size: 1.2em;
-    padding: 20px 0 15px 10px;
+    padding: 10px 0px 7px 30px;
     overflow: auto;
+    border-left: 20px solid rgb(189,27,33);
 }
 
 
-#left{
-position: fixed; 
-top: 0; 
-left: 0; 
-width: 20%; /*Width of left frame div*/
-height: 100%;
-/*overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-background-color: #fff;
-z-index:1;
+#ikiLogo {
+    display: block;
+    width:100px;
 }
 
-.innertube{
-    margin: 30px; /*Margins for inner DIV inside each DIV (to provide padding)*/
-    margin-top: 0;
+.parallaxElement {
+    position:absolute;
+    left:0px;
+    width:100%;
+    height:1500px;
 }
+
+.logo {
+    width:250px;
+    top:100px;
+    left:100px;
+    position:relative;
+    z-index:50;
+    display:block;
+}
+
+#cavetown, #qpark, #vidatec, #crash {
+    position:relative;  
+    height:1500px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #444;
+}
+
+#cavetown { z-index:5;}
+#qpark { z-index:4;}
+#vidatec { z-index:3;}
+#crash { z-index:2;}
+
+
+
+#cavetown-bg { background:url(images/CaveTown3.jpg) no-repeat fixed; }
+#cavetown-mg { background:url(images/CaveTown2.png) no-repeat fixed; }
+#cavetown-fg { background:url(images/CaveTown1.png) no-repeat fixed; }
+
+#qpark-bg { background:url(images/Qpark3.png) no-repeat; }
+#qpark-mg{ background:url(images/Qpark2.png) no-repeat; }
+#qpark-fg { background:url(images/Qpark1.png) no-repeat; }
+
+#vidatec-bg { background:url(images/CaveTown3.jpg) no-repeat fixed; }
+#vidatec-mg { background:url(images/CaveTown2.png) no-repeat fixed; }
+#vidatec-fg { background:url(images/CaveTown1.png) no-repeat fixed; }
+
+#crash-bg { background:url(images/Qpark3.png) no-repeat; }
+#crash-mg{ background:url(images/Qpark2.png) no-repeat; }
+#crash-fg { background:url(images/Qpark1.png) no-repeat; }
+
+
+
