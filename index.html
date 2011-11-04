@@ -13,17 +13,18 @@
 $(document).ready(function(){
 	$('#nav').localScroll(800);
 	
-	RepositionNav();
+	//RepositionNav();
 	
-	$(window).resize(function(){
+	/*$(window).resize(function(){
 		RepositionNav();
 	});	
-	
+	*/
 	//.parallax(xPosition, adjuster, inertia, outerHeight) options:
 	//xPosition - Horizontal position of the element
 	//adjuster - y position to start from
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+
 	$('#cavetown-mg').parallax(0, 600, 0.3, true);
 	$('#cavetown-fg').parallax(0, 0, 1, true);
 
@@ -31,32 +32,48 @@ $(document).ready(function(){
 	$('#qpark-fg').parallax(0, 1750, 1, true);
  
 	$('#lovestory-mg').parallax(0, 3000, 0.3, true);
-	$('#lovestory-fg').parallax(0, 3000, 1, true);
+	$('#lovestory-fg').parallax(0, 3500, 1, true);
  
     $('#vidatec-mg').parallax(0, 4500, 0.3, true);
 	$('#vidatec-fg').parallax(0, 4500, 1, true);
  
 	$('#crash-mg').parallax(0, 6000, 0.3, true);
 	$('#crash-fg').parallax(0, 6000, 1, true);
-
-    //fix it once everything is ready
-     
-   
 })
 </script>
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-6699145-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
 </head>
 
 <body>
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
-
     
     <div id="top">
     <img src="images/IkiGamingLogoWhite.png" id="ikiLogo"/>
+    <p class="topText">Multiplatform games</p>
+	<ul id="nav">
+		<li><a href="#cavetown"><img src="images/LogoCaveTown.png" class="navlogo"/></a></li>
+	    <li><a href="#qpark"><img src="images/QparkLogo.png" class="navlogo" /></a></li>
+	    <li><a href="#lovestory"><img src="images/LoveStoryLogo.png" class="navlogo" /></a></li>
+	    <li><a href="#vidatec"><img src="images/VidaTecLogo.png" class="navlogo" /></a></li>
+	    <li><a href="#crash"><img src="images/CrashPollitoLogo.png" class="navlogo" /></a></li>
+    </ul>
+    <ul id="extras">
+        <li><a href="https://getsatisfaction.com/ikigaming/"><img src="images/SupportIcon.png" class="navLogo"></a></li>
+	    <li><a href="mailto:contacto@ikigaming.com"><img src="images/ContactIcon.png" class="navLogo"></a></li>
+	</ul>
+
     </div>	
 
 
@@ -70,15 +87,15 @@ $(document).ready(function(){
             <h2 class="cavetown-color">Jump back to the prehistoric Era!</h2>
             <p>Travel in time and and grow your own cavemen's town!</p>
             <ul>
-                <li class="cavetown-list">>Find cute ancient mammals, harvest exotic crops and fruit trees!</li>
-                <li class="cavetown-list">>Tame an exciting world full of carnivorous plants and wild dinosaurs!</li>
-                <li class="cavetown-list">>Decorate your lands with tamed dinosaurs and exotic animals!</li>
+                <li class="cavetown-list">> Find cute ancient mammals, harvest exotic crops and fruit trees!</li>
+                <li class="cavetown-list">> Tame an exciting world full of carnivorous plants and wild dinosaurs!</li>
+                <li class="cavetown-list">> Decorate your lands with tamed dinosaurs and exotic animals!</li>
             </ul>
             <p>Play it now!</p>
                 <p> 
-                    <a href="dadada" class="playButton cavetown-button">Play on Facebook</a> 
-                    <a href="dadada" class="playButton">Play on Odnoklassniki</a> 
-                    <a href="dadada" class="playButton">Play on Orkut</a> 
+                    <a href="http://apps.facebook.com/cavetown" class="playButton">Play on Facebook</a> 
+                    <a href="http://odnoklassniki.com/games/cavetown" class="playButton">Play on Odnoklassniki</a> 
+                    <a href="http://http://www.orkut.com/Main#Application?appId=75481347730" class="playButton">Play on Orkut</a> 
                 </p>
             <p>Coming soon to: <strong>iOS</strong></p>
         </div>
@@ -107,7 +124,7 @@ $(document).ready(function(){
         <div id="lovestory-bg" class="parallaxElement"></div>
         <div id="lovestory-mg" class="parallaxElement"></div> 
         <div id="lovestory-fg" class="parallaxElement"></div> 
-        <img src="images/VidaTecLogo.png" class="logo"/>
+        <img src="images/LoveStoryLogo.png" class="logo"/>
         <div class="description">
             <div class="arrow"></div>
             <h2 class="lovestory-color">Find your own love story</h2>
@@ -116,6 +133,13 @@ $(document).ready(function(){
             <li class="lovestory-list">Get help from all your good friends! Fight against the douchebags!</li>
             <li class="lovestory-list">See how your decisions affect your long term plan to get the girl.</li>
             <li class="lovestory-list">Be careful with your ex-girlfriend, she might bring trouble! </li>
+            </ul>
+        
+             <p>Play it now!</p>
+                <p> 
+                    <a href="http://itunes.apple.com/en/app/love.story/id457133939?mt=8" class="playButton">Play on iOS</a> 
+                </p>
+            <p>Coming soon to android!</p>
         </div>
     </div>
 
@@ -132,22 +156,39 @@ $(document).ready(function(){
                 <li class="vidatec-list">Explore all the different campi within the metropolitan area.</li>
                 <li class="vidatec-list">Test your abilities and knowledge against your friends.</li>
                 <li class="vidatec-list">Decorate your avatar and apartment to match your likes. </li>
+            </ul>
+              <p>Play it now!</p>
+                <p> 
+                    <a href="http://apps.facebook.com/vidatec" class="playButton">Play on Facebook</a> 
+                </p>
+       
         </div>
+
     </div>
 
    <div id="crash">
        <div id="crash-bg" class="parallaxElement"></div>
        <div id="crash-mg" class="parallaxElement"></div> 
        <div id="crash-fg" class="parallaxElement"></div> 
-       <img src="images/LogoCaveTown.png" class="logo"/>
+       <img src="images/CrashPollitoLogo.png" class="logo"/>
         <div class="description">
 			<div class="arrow"></div>
-            <h2>Crash pollito</h2>
-            <p>Go back to the prehistoric era!</p>
+            <h2 class="crash-color">Fly pollito, fly!</h2>
+            <p>In collaboration with <a href="http://www.qcreativo.com">QCreativo</a></p>
+            <p>Poor little chicken!! You’ve always wanted to fly. Now, with the help of your special red wagon, the boost of a horse’s hoof and other special items, you are ready to launch!!! Chow down on corn and chili peppers mid-flight and take advantage of cacti and clouds to propel to new heights. Just be careful and don’t crash, Pollito!!</p>
+           <ul>
+                <li class="crash-list"> Simple yet addictive gameplay </li>
+                <li class="crash-list"> 6 power ups & 3 special power ups for everyone!!</li>
+                <li class="crash-list"> Unlock more power ups and special power ups with achievements</li>
+            </ul>
+          <p>Play it now!</p>
+            <p> 
+                    <a href="http://apps.facebook.com/vidatec" class="playButton">Play on Facebook</a> 
+            </p>
+           <p>Coming soon to iOS and android!</p>
+       
         </div>
     </div>
-
-
 
 </body>
 </html>
