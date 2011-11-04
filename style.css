@@ -19,13 +19,42 @@ body{
 }
 
 #nav{
+    display:inline;
+    top:0px;
 	list-style: none;
-	position: fixed;
-	right: 20px;
+	position: inline;
+    left: 400px;
+    z-index:15;
+}
+
+.topText {
+    display: inline;
+    top: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left:30px;
+    vertical-align:top;
+}
+
+.navlogo {
+    height:40px; 
 }
 
 #nav li{
-	margin: 0 0 15px 0;	
+    display: inline;
+	margin-left: 50px ;	
+}
+
+#extras {
+    position:absolute;
+    right:100px;
+    top: 0px;
+
+}
+
+#extras li {
+    display: inline;
+    margin-left: 15px;
 }
 
 p{
@@ -169,13 +198,17 @@ li {
     color: white;
     font-size: 1.2em;
     padding: 10px 0px 7px 30px;
-    overflow: auto;
     border-left: 20px solid rgb(189,27,33);
 }
 
+a {
+    color: #ccc;
+    font-weight: 700;
+    
+}
 
 #ikiLogo {
-    display: block;
+    display: inline;
     width:100px;
 }
 
@@ -203,17 +236,17 @@ li {
 }
 
 .qpark-color { color:rgb(176,214,237); }
-.cavetown-color { color: #3c3; }
+.cavetown-color { color: rgb(129,195,70); }
 .vidatec-color { color:rgb(55,117,201); }
 .lovestory-color { color:#c33;}
-.crash-color { }
+.crash-color { color: rgb(255,230,85);}
 
 
-.cavetown-list  { border-bottom: 1px solid #33cc33; }
+.cavetown-list  { border-bottom: 1px solid rgb(129,195,70); }
 .qpark-list     { border-bottom: 1px solid rgb(176,214,237);}
 .vidatec-list   { border-bottom: 1px solid rgb(55,117,201); }
 .lovestory-list { border-bottom: 1px solid #c33;}
-.crash-list     { border-bottom: 1px solid rgb(176,214,237);}
+.crash-list     { border-bottom: 1px solid rgb(255,230,85);}
 
 
 #cavetown { z-index:5;}
@@ -221,8 +254,6 @@ li {
 #vidatec { z-index:3;}
 #lovestory {z-index:2;}
 #crash { z-index:1;}
-
-
 
 #cavetown-bg { background:url(images/CaveTown3.jpg) no-repeat fixed; }
 #cavetown-mg { background:url(images/CaveTown2.png) no-repeat fixed; }
@@ -237,12 +268,11 @@ li {
 #vidatec-fg { background:url(images/VidaTec1.png) no-repeat fixed; }
 
 #lovestory-bg { background:url(images/LoveStory3.jpg) no-repeat; }
-#lovestory-mg{ background:url(images/Qprk2.png) no-repeat; }
 #lovestory-fg { background:url(images/LoveStory1.png) no-repeat; }
 
-#crash-bg { background:url(images/Qpark3.png) no-repeat; }
-#crash-mg{ background:url(images/Qpark2.png) no-repeat; }
-#crash-fg { background:url(images/Qpark1.png) no-repeat; }
+#crash-bg { background:url(images/CrashPollito3.png) no-repeat; }
+#crash-mg{ background:url(images/CrashPollito2.png) no-repeat; }
+#crash-fg { background:url(images/CrashPollito1.png) no-repeat; }
 
 
 
