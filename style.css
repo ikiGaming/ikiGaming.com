@@ -13,18 +13,18 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 
 body{
 	font-family:"Metrophobic", sans-serif;
-    margin: 0;
+  margin: 0;
 	padding: 0;
-    font-size:14pt;
+  font-size:14pt;
 }
 
 #nav{
-    display:inline;
-    top:0px;
+  display:inline;
+  top:0px;
 	list-style: none;
 	position: inline;
-    left: 400px;
-    z-index:15;
+  left: 400px;
+  z-index:15;
 }
 
 .topText {
@@ -37,12 +37,12 @@ body{
 }
 
 .navlogo {
-    height:40px; 
+    height:40px;
 }
 
 #nav li{
     display: inline;
-	margin-left: 50px ;	
+	margin-left: 50px ;
 }
 
 #extras {
@@ -57,18 +57,22 @@ body{
     margin-left: 15px;
 }
 
+.legalese {
+  margin-top: 80px;
+  background-color: #222;
+}
+
 p{
     color:#f2f2f2;
     text-shadow:0 1px 0 #222;
     padding-left:18px;
 }
 
-h2
+h2, h1
 {
     font-family: "Open Sans", sans-serif;
     letter-spacing: -0.05em;
     font-weight:700;
-    font-size:2em;
     color:#fafafa;
     text-shadow:0 1px 0 #222;
     margin: 0px;
@@ -82,7 +86,7 @@ h2
 	border-radius: 30px;
     top:100px;
     position:absolute;
-    left: 400px; 
+    left: 400px;
 	box-shadow:  0 0 15px #000;
 	-webkit-box-shadow:  0 0 15px #000;
 	-moz-box-shadow:  0 0 15px #000;
@@ -96,11 +100,11 @@ h2
 		top: 50px;
 		left: -50px;
 	}
-	
+
 	.description h2{
 		font-size: 34px;
 		text-align: center;
-		text-transform: uppercase;	
+		text-transform: uppercase;
 	}
 
 	.description p {
@@ -167,7 +171,7 @@ h2
 }
 
 
-	
+
 	.description ul li {
 		list-style-type: none;
 		height: 100px;
@@ -193,7 +197,7 @@ li {
     top:0px;
     background-color: rgba(0,0,0,0.9);
     position: fixed;
-    width: 100%;    
+    width: 100%;
     z-index: 1000;
     color: white;
     font-size: 1.2em;
@@ -204,7 +208,7 @@ li {
 a {
     color: #ccc;
     font-weight: 700;
-    
+
 }
 
 #ikiLogo {
@@ -229,7 +233,7 @@ a {
 }
 
 #lovestory, #cavetown, #qpark, #vidatec, #crash {
-    position:relative;  
+    position:relative;
     height:1500px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     border-bottom: 1px solid #444;
@@ -273,6 +277,3 @@ a {
 #crash-bg { background:url(images/CrashPollito3.png) no-repeat; }
 #crash-mg{ background:url(images/CrashPollito2.png) no-repeat; }
 #crash-fg { background:url(images/CrashPollito1.png) no-repeat; }
-
-
-
